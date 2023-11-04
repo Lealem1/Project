@@ -1,13 +1,13 @@
 public class Person {
     private static int nextId = 1;
 
-    private int id;
-    private String name;
-    private int age;
-    private boolean parentPermission;
+     int id;
+     String name="unknown";
+     int age;
+     boolean parentPermission=true;
 
     public Person(String name, int age, boolean parentPermission) {
-        this.id = nextId++;
+       
         this.name = name;
         this.age = age;
         this.parentPermission = parentPermission;
@@ -17,9 +17,8 @@ public class Person {
         this(name, age, true); // Use default values
     }
 
-    public int getId() {
-        return id;
-    }
+    
+    
 
     public String getName() {
         return name;
