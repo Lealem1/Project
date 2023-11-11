@@ -1,4 +1,9 @@
 public class Teacher extends Person {
+
+    public Teacher(String name, int age, boolean parentPermission) {
+        super(name, age, parentPermission);
+    }
+
      String specialization;
 
     public Teacher(String name, int age, String specialization) {
@@ -8,6 +13,7 @@ public class Teacher extends Person {
 
     
     }
+
 
     @Override
     public boolean canUseServices() {

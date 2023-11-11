@@ -1,3 +1,13 @@
+
+public class Person implements Nameable{
+    int id;
+    String name;
+    int age;
+    boolean parentPermission;
+
+    public Person(String name, int age, boolean parentPermission) {
+        this.id =id;
+
 public class Person {
     private static int nextId = 1;
 
@@ -8,10 +18,16 @@ public class Person {
 
     public Person(String name, int age, boolean parentPermission) {
        
+
         this.name = name;
         this.age = age;
         this.parentPermission = parentPermission;
     }
+
+    public int getId() {
+        return id;
+    }
+
 
     public Person(String name, int age) {
         this(name, age, true); // Use default values
@@ -19,6 +35,7 @@ public class Person {
 
     
     
+
 
     public String getName() {
         return name;
@@ -42,6 +59,11 @@ public class Person {
 
     public boolean canUseServices() {
         return isOfAge() || parentPermission;
+    }
+
+    @Override
+    public String getCorrectName() {
+        return name;
     }
 }
 
