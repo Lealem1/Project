@@ -1,3 +1,4 @@
+
 public class Person implements Nameable{
     int id;
     String name;
@@ -6,13 +7,35 @@ public class Person implements Nameable{
 
     public Person(String name, int age, boolean parentPermission) {
         this.id =id;
+
+public class Person {
+    private static int nextId = 1;
+
+     int id;
+     String name="unknown";
+     int age;
+     boolean parentPermission=true;
+
+    public Person(String name, int age, boolean parentPermission) {
+       
+
         this.name = name;
         this.age = age;
         this.parentPermission = parentPermission;
     }
+
     public int getId() {
         return id;
     }
+
+
+    public Person(String name, int age) {
+        this(name, age, true); // Use default values
+    }
+
+    
+    
+
 
     public String getName() {
         return name;
