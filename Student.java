@@ -5,8 +5,4 @@ public class Student extends Person {
         super(name, age, parentPermission);
         this.classroom = classroom;
     }
-
-    public String getClassroom() {
-        return classroom;
-    }
 }
