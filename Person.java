@@ -1,27 +1,16 @@
-
+import java.util.ArrayList;
+import java.util.List;
 public class Person implements Nameable{
     int id;
     String name;
     int age;
     boolean parentPermission;
-
-    public Person(String name, int age, boolean parentPermission) {
-        this.id =id;
-
-public class Person {
-    private static int nextId = 1;
-
-     int id;
-     String name="unknown";
-     int age;
-     boolean parentPermission=true;
-
-    public Person(String name, int age, boolean parentPermission) {
-       
-
+    private List<Rental> rentals;
+    public Person(String name,int age, boolean parentPermission) {
         this.name = name;
         this.age = age;
         this.parentPermission = parentPermission;
+        this.rentals = new ArrayList<>();
     }
 
     public int getId() {
@@ -33,8 +22,8 @@ public class Person {
         this(name, age, true); // Use default values
     }
 
-    
-    
+
+
 
 
     public String getName() {
@@ -65,5 +54,11 @@ public class Person {
     public String getCorrectName() {
         return name;
     }
-}
+    public List<Rental> getRentals() {
+        return rentals;
+    }
 
+    public void addRental(Rental rental) {
+        rentals.add(rental);
+    }
+}
