@@ -7,6 +7,7 @@ public class Main {
         Scanner scanner=new Scanner(System.in);
         int choice;
         do{
+            System.out.println("**********WELLCOME TO OOP LIBRARY*********");
             System.out.println("Choose an option:");
             System.out.println("1. List all books");
             System.out.println("2. List all people");
@@ -45,6 +46,7 @@ public class Main {
                     break;
                 case 0:
                     System.out.println("Exiting the application...");
+                    System.out.println("WE HOPE YOU ENJOY OUR WORK");
                     break;
                 default:
                     System.out.println("Invalid choice.please try again.");
