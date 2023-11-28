@@ -13,7 +13,7 @@ public class Person implements Nameable{
         this.rentals = new ArrayList<>();
     }
 
-    public int getId() {
+    public int getid() {
         return id;
     }
 
@@ -21,9 +21,6 @@ public class Person implements Nameable{
     public Person(String name, int age) {
         this(name, age, true); // Use default values
     }
-
-
-
 
 
     public String getName() {
@@ -61,4 +58,5 @@ public class Person implements Nameable{
     public void addRental(Rental rental) {
         rentals.add(rental);
     }
+
 }

@@ -3,7 +3,7 @@ public class Rental {
     private Book book;
     private Person person;
 
-    public Rental(String date, Book book, Person person) {
+    public Rental(Book book, Person person) {
         this.date= date;
         this.book = book;
         this.person = person;
