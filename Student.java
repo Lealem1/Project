@@ -6,7 +6,6 @@ class Student extends Person {
         super(id,name, age);
     }
     public Classroom getClassroom() {
-
         return classroom;
     }
     public void setClassroom(Classroom classroom) {

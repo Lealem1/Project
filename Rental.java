@@ -1,6 +1,6 @@
 import java.util.Date;
 public class Rental {
-     String date;
+     Date date;
     Book book;
      Person person;
     public Rental(Book book, Person person) {
@@ -12,10 +12,10 @@ public class Rental {
     }
     public Rental(Date currentDate,Person person, Book book) {
     }
-    public String getDate() {
+    public Date getDate() {
         return date;
     }
-    public void setDate(String date) {
+    public void setDate(Date date) {
         this.date = date;
     }
     public Book getBook() {

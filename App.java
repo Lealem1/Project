@@ -5,7 +5,6 @@ public class App {
     static List<Book> books= new ArrayList<>();
     List<Person> people= new ArrayList<>();
     List<Rental> rentals= new ArrayList<>();
-   // List<Classroom> students= new ArrayList<>();
     void listAllBooks() {
         if (books.isEmpty()) {
             System.out.println("No books available");}
@@ -60,7 +59,7 @@ public class App {
             String classroom=scanner.nextLine();
             Student student = new Student(id,name,age,classroom,parentPermission.equals("Y"));
             System.out.println("Created student " + student.getName()
-                    + " with id " + student.getid()+ student.getClassroom());
+                    + " with id " + student.getid());
             people.add(student);
         }
         public void createTeacher() {
@@ -124,7 +123,7 @@ public class App {
         boolean rentalsFound = false;
         for (Rental rental : rentals) {
             if (rental.getPerson().getid() == personId) {
-                System.out.println("(book "+  rental.getBook().getTitle()+ " author by "+ rental.getBook().getAuthor());
+                System.out.println("(book "+  rental.getBook().getTitle()+ " author by "+ rental.getBook().getAuthor()+")");
                 rentalsFound = true;
             }
         }

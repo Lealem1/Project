@@ -43,10 +43,13 @@ public class Person implements Nameable{
             return name.toUpperCase();
         }
     }
+
     public List<Rental> getRentals() {
         return rentals;
     }
-    public void addRental(Rental rental) {
+    public Rental addRental(Rental rental) {
         rentals.add(rental);
+        return rental;
     }
+
 }
