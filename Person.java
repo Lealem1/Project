@@ -5,6 +5,7 @@ public class Person implements Nameable{
     String name;
     int age;
     boolean parentPermission;
+    String stud_class;
     private List<Rental> rentals;
     public Person(int id,String name,int age) {
         this.name = name;
@@ -13,6 +14,11 @@ public class Person implements Nameable{
         this.parentPermission = parentPermission;
         this.rentals = new ArrayList<>();
     }
+
+
+
+
+
     public int getid() {
         return id;
     }
