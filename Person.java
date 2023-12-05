@@ -5,19 +5,16 @@ public class Person implements Nameable{
     String name;
     int age;
     boolean parentPermission;
-    private List<Rental> rentals;
+     List<Rental> rentals;
     public Person(String name,int age, boolean parentPermission) {
         this.name = name;
         this.age = age;
         this.parentPermission = parentPermission;
         this.rentals = new ArrayList<>();
     }
-
     public int getId() {
         return id;
     }
-
-
     public Person(String name, int age) {
         this(name, age, true); // Use default values
     }
